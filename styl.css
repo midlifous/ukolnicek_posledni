@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color: black;
+    align-items: center;
+    padding:  0 25px;
+    
+
+}
+header a{
+
+    color: white;
+    text-decoration: none;
+   
+    
+}
+
+#blbnicek{
+    font-size: 1.5em;
+}
+
+nav > a.active{
+    background-color: green;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 100px 70px;
+    grid-gap: 15px;
+    text-align: center;
+}
+
+
+
+nav  a{
+    text-transform:capitalize;
+    
+    border-radius: 5px;
+    padding: 3px;
+    text-decoration: none;
+}
+
+
+#prvni{
+        display: flex; 
+        flex-direction: column;
+        height: calc(100vh-70px);
+        
+}
+section{
+    background-image:url("IMG_2.jpeg");
+    height: 100vh;
+    
+
+}
+
+
+
+
+
+
+
+/*
+
+#ukoly p, button
+{
+    margin-top: 20px;
+    width: 200px;
+    
+    align-items: center;
+}
+ul
+{
+    max-height: 30px;
+    max-width: 1000px;
+    
+    
+}
+
+
+*/
+
+#prvni h1,h2,ul{
+    margin: 10px;
+    margin-left: 200px;
+   
+}
+
+
+#prvni button, input{
+    margin: 10px;
+    width: 150px;
+    margin-left: 200px;
+   
+}
+    
+
+
+#poznamka{
+    position: fixed;
+    
+    right: 100px;
+    top: 100px;
+    color: rgb(0, 0, 0);
+    width: 400px;
+    background-color: aliceblue;
+    min-height: 300px;
+    padding: 10px;
+    text-decoration: underline;
+    
+    
+}
+#poznamka div{
+    display: grid;
+    grid-template-columns: 100px 10px;
+    
+}
+
+.progress {
+    --bs-progress-height: 1rem;
+    --bs-progress-font-size: 0.75rem;
+    --bs-progress-bg: var(--bs-secondary-bg);
+   
+    --bs-progress-box-shadow: var(--bs-box-shadow-inset);
+    --bs-progress-bar-color: #fff;
+    --bs-progress-bar-bg: #0d6efd;
+    --bs-progress-bar-transition: width 0.6s ease;
+    display: flex;
+    height: var(--bs-progress-height);
+    overflow: hidden;
+    font-size: var(--bs-progress-font-size);
+    background-color:#fff;
+    border-radius: 20px;
+    width: 216px;
+    margin-left: -450px;
+}
+
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--bs-progress-bar-color);
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--bs-progress-bar-bg);
+    transition: var(--bs-progress-bar-transition);
+    width: 54px;
+}
+
+#animate {
+    position: absolute;
+  }
+  
+
+/*
+#input{
+    width: 40px;
+    margin: 10px;
+    margin-left: 200px;
+    
+}
+    */
+
+    
+
+
