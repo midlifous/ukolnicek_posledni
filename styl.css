@@ -176,10 +176,13 @@ ul
     */
 
     /*pokus */ 
-
+    .animace{
+        animation-name: odstranit;
+        animation-duration: 15s;
+    }
     
     @keyframes odstranit {
-        from {color: red;}
-        to {color: yellow;}
+        from {margin-left: 200px;}
+        to {margin-left: 4000px;}
       }
 

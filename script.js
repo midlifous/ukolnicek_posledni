@@ -24,6 +24,17 @@ function pridat()
         }
 }
 
+function smazat(){
+  document.getElementById("in1").className = "animace";
+  setTimeout(mazani, 5000);
+}
+function mazani(){
+  let mazanaVec = document.getElementById("in1");
+  mazanaVec.remove();
+}
+
+
+
 /*
 function odstranit() {
   let id = null;
