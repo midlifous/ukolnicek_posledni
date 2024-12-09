@@ -32,22 +32,3 @@ function mazani(){
   let mazanaVec = document.getElementById("in1");
   mazanaVec.remove();
 }
-
-
-
-/*
-function odstranit() {
-  let id = null;
-  const ctverec = document.getElementById("animate");   
-  let pos = 0;
-  clearInterval(id);
-  id = setInterval(frame, 5);
-  function frame() {
-    if (pos == 2500) {
-      clearInterval(id);
-    } else {
-      pos++;
-      ctverec.style.left = pos + "px"; 
-    }
-  }
-}*/
