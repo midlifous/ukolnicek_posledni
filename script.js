@@ -1,3 +1,4 @@
+let number = 0;
 function univerzalni(smile)
 {
     //document.getElementById("emoji").innerHTML = smile;
@@ -24,11 +25,12 @@ function pridat()
         }
 }
 
-function smazat(){
-  document.getElementById("in1").className = "animace";
+function smazat(cislo){
+  number = cislo;
+  document.getElementById("in" + cislo).className = "animace";
   setTimeout(mazani, 5000);
 }
 function mazani(){
-  let mazanaVec = document.getElementById("in1");
+  let mazanaVec = document.getElementById("in" + number);
   mazanaVec.remove();
 }
