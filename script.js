@@ -23,6 +23,8 @@ function pridat()
             alert("není co přidat!!!");
         }
 }
+
+/*
 function odstranit() {
   let id = null;
   const ctverec = document.getElementById("animate");   
@@ -37,4 +39,4 @@ function odstranit() {
       ctverec.style.left = pos + "px"; 
     }
   }
-}
+}*/

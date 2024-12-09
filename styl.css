@@ -47,6 +47,7 @@ nav  a{
     border-radius: 5px;
     padding: 3px;
     text-decoration: none;
+    
 }
 
 
@@ -54,6 +55,8 @@ nav  a{
         display: flex; 
         flex-direction: column;
         height: calc(100vh-70px);
+        background-color: red;
+        
         
 }
 section{
@@ -157,11 +160,11 @@ ul
     transition: var(--bs-progress-bar-transition);
     width: 54px;
 }
-
+/*
 #animate {
     position: absolute;
   }
-  
+  */
 
 /*
 #input{
@@ -175,5 +178,8 @@ ul
     /*pokus */ 
 
     
-
+    @keyframes odstranit {
+        from {color: red;}
+        to {color: yellow;}
+      }
 
