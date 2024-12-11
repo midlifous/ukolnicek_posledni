@@ -93,18 +93,28 @@ ul
 */
 
 #prvni h1,h2,ul{
-    margin: 10px;
+    margin: 13px;
     margin-left: 200px;
+    display: flex;
+    
    
 }
 
 
 #prvni button, input{
-    margin: 10px;
-    width: 150px;
-    margin-left: 200px;
+    
+    
+    width:  200px;
+    margin-left: 300px;
+    display: block;
+    
    
 }
+#input{
+    margin-top: 4px;
+    margin-left: -100px;
+}
+    
     
 
 
