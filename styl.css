@@ -1,10 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-   
 }
-
-/*blabla*/
 
 header{
     display: flex;
@@ -12,130 +9,11 @@ header{
     height: 70px;
     background-color: black;
     align-items: center;
-    padding:  0 25px;
-    
-
+    padding:  0 2%;
 }
 header a{
-
     color: white;
     text-decoration: none;
-   
-    
-}
-
-#blbnicek{
-    font-size: 1.5em;
-}
-
-nav > a.active{
-    background-color: green;
-}
-
-nav {
-    display: grid;
-    grid-template-columns: 100px 70px;
-    grid-gap: 15px;
-    text-align: center;
-}
-
-
-
-nav  a{
-    text-transform:capitalize;
-    
-    border-radius: 5px;
-    padding: 3px;
-    text-decoration: none;
-    
-}
-
-
-#prvni{
-        display: flex; 
-        flex-direction: column;
-        height: calc(100vh-70px);
-        background-color: red;
-        
-        
-}
-section{
-    background-image:url("IMG_2.jpeg");
-    height: 100vh;
-    
-
-}
-
-
-
-
-
-
-
-/*
-
-#ukoly p, button
-{
-    margin-top: 20px;
-    width: 200px;
-    
-    align-items: center;
-}
-ul
-{
-    max-height: 30px;
-    max-width: 1000px;
-    
-    
-}
-
-
-*/
-
-#prvni h1,h2,ul{
-    margin: 13px;
-    margin-left: 200px;
-    display: flex;
-    
-   
-}
-
-
-#prvni button, input{
-    
-    
-    width:  200px;
-    margin-left: 300px;
-    display: block;
-    
-   
-}
-#input{
-    margin-top: 4px;
-    margin-left: -100px;
-}
-    
-    
-
-
-#poznamka{
-    position: fixed;
-    
-    right: 100px;
-    top: 100px;
-    color: rgb(0, 0, 0);
-    width: 400px;
-    background-color: aliceblue;
-    min-height: 300px;
-    padding: 10px;
-    text-decoration: underline;
-    
-    
-}
-#poznamka div{
-    display: grid;
-    grid-template-columns: 100px 10px;
-    
 }
 
 .progress {
@@ -154,9 +32,8 @@ ul
     background-color:#fff;
     border-radius: 20px;
     width: 216px;
-    margin-left: -450px;
+    margin-left: -15%;
 }
-
 
 .progress-bar {
     display: flex;
@@ -170,6 +47,95 @@ ul
     transition: var(--bs-progress-bar-transition);
     width: 54px;
 }
+
+#blbnicek{
+    font-size: 1.5em;
+}
+
+nav > a.active{
+    background-color: green;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 100px 70px;
+    grid-gap: 15px;
+    text-align: center;
+}
+
+nav  a{
+    text-transform:capitalize;
+    
+    border-radius: 5px;
+    padding: 3px;
+    text-decoration: none;
+}
+
+#prvni{
+        display: flex; 
+        flex-direction: column;
+        height: calc(100vh-70px);
+        background-color: red;
+}
+section{
+    background-image:url("IMG_2.jpeg");
+    height: 100vh;
+}
+
+/*
+
+#ukoly p, button
+{
+    margin-top: 20px;
+    width: 200px;
+    
+    align-items: center;
+}
+ul
+{
+    max-height: 30px;
+    max-width: 1000px;
+    
+    
+}
+*/
+
+#prvni h1,h2,ul{
+    margin: 13px;
+    margin-left: 200px;
+    display: flex;
+}
+
+#prvni button, input{
+    width:  200px;
+    margin-left: 300px;
+    display: block;
+}
+#prvni input{
+    width: 197px;
+}
+#input{
+    margin-top: 4px;
+    margin-left: -100px;
+}
+    
+#poznamka{
+    position: fixed;
+    
+    right: 100px;
+    top: 100px;
+    color: rgb(0, 0, 0);
+    width: 400px;
+    background-color: aliceblue;
+    min-height: 300px;
+    padding: 10px;
+    text-decoration: underline;
+}
+#poznamka div{
+    display: grid;
+    grid-template-columns: 100px 10px;
+}
+
 /*
 #input{
     width: 40px;
@@ -178,8 +144,6 @@ ul
     
 }
     */
-
-    /*pokus */ 
     .animace{
         animation-name: odstranit;
         animation-duration: 15s;
@@ -190,3 +154,30 @@ ul
         to {margin-left: 4000px;}
       }
 
+      @media only screen and (max-width: 850px){
+        #knizka, #blbnicek{
+            display: none;
+        }
+        .progress{
+            margin-left: 0px;
+        }
+        #prvni h1, h2, ul{
+            margin-left: 5px;
+        }
+        #prvni button, input {
+            margin-left: 110px;
+            width:150px;
+        }
+        #input button{
+            width:200px;
+        }
+        .animace{
+            animation-name: odstranit;
+            animation-duration: 5s;
+        }
+        
+        @keyframes odstranit {
+            from {margin-left: 5px;}
+            to {margin-left: 110%;}
+          }
+      }
