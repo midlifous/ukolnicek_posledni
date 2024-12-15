@@ -161,6 +161,9 @@ ul
         .progress{
             margin-left: 0px;
         }
+        nav > a.active{
+            background-color: black;
+        }
         #prvni h1, h2, ul{
             margin-left: 5px;
         }
